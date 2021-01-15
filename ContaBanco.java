@@ -41,7 +41,7 @@ public final class ContaBanco {
         
     }
     
-    public void deposita(float v){
+    public void deposita(Double v){
         if (this.getStatus()){
             //this.saldo = this.saldo + v;                                         // alterando direto nos atributo
             this.setSaldo (v + this.getSaldo());                                    // trabalhando direto nos metodos especiais
@@ -103,7 +103,7 @@ public final class ContaBanco {
     public String getDono(){
         return this.dono;
     }
-    public void setSaldo(float s){
+    public void setSaldo(Double s){
         this.saldo = s;
     }
     public float getSaldo(){
